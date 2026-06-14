@@ -2,7 +2,7 @@
     "name": "Roast Chicken",
     "description": "Delicious roast chicken with all the trimmings",
     "ingredients": ["Chicken", "Stuffing mix", "Potatoes",  "Plain Flour", "Herbs","Vegetables", "Gravy", "Love"],
-    "defaultMainIngredientMassKg": 1.2,
+    "defaultMainIngredientMassKg": 1.1,
     "minimumMass": 1.0,
     "maximumMass": 3.2,
     "steps": [

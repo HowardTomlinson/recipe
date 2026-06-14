@@ -2,8 +2,8 @@
     "name": "Roast Beef",
     "description": "Delicious roast beef",
     "ingredients": ["Beef", "Vegetable Oil","Yorkshire puddings (eggs, flour, milk)", "Potatoes", "Gravy", "Vegetables", "Horseradish sauce"],
-    "defaultMainIngredientMassKg": 1.0,
-    "minimumMass": 1.0,
+    "defaultMainIngredientMassKg": 0.8,
+    "minimumMass": 0.6,
     "maximumMass": 3.2,
     "steps": [
         {

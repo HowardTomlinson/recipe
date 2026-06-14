@@ -2,8 +2,8 @@
     "name": "Roast Pork",
     "description": "Delicious roast pork.",
     "ingredients": ["Pork", "Stuffing", "Potatoes", "Plain Flour", "Gravy", "Apple Sauce"],
-    "defaultMainIngredientMassKg": 1.6,
-    "minimumMass": 1.0,
+    "defaultMainIngredientMassKg": 1.0,
+    "minimumMass": 0.6,
     "maximumMass": 3.2,
     "steps": [
         {
