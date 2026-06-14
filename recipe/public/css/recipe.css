@@ -119,6 +119,69 @@ li {
     background: var(--cream);
 }
 
+.step-card {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 16px;
+    align-items: center;
+}
+
+.step-content {
+    min-width: 0;
+}
+
+.step-icon {
+    justify-self: end;
+}
+
+.oven-icon {
+    position: relative;
+    width: 82px;
+    height: 74px;
+    box-sizing: border-box;
+    border: 4px solid var(--deep-chestnut);
+    border-radius: 12px;
+    background: linear-gradient(#6d3a1d, #4a2412);
+    box-shadow: inset 0 0 0 4px rgba(255, 244, 216, 0.18);
+}
+
+.oven-icon::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 14px;
+    right: 14px;
+    height: 8px;
+    border-radius: 999px;
+    background: var(--warm-yellow);
+}
+
+.oven-icon::after {
+    content: "";
+    position: absolute;
+    left: 12px;
+    right: 12px;
+    bottom: 10px;
+    height: 34px;
+    border: 3px solid var(--warm-yellow);
+    border-radius: 8px;
+    background: rgba(255, 244, 216, 0.12);
+}
+
+.oven-temperature {
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    bottom: 18px;
+    transform: translateX(-50%);
+    color: var(--warm-yellow);
+    font-size: 1rem;
+    font-weight: 900;
+    line-height: 1;
+    text-shadow: 1px 1px 0 var(--deep-chestnut);
+    white-space: nowrap;
+}
+
 #steps-list h3 {
     margin-top: 0;
 }
@@ -161,6 +224,8 @@ li {
     align-items: start;
 }
 
+
+
 .recipe-image {
     display: block;
     width: 100%;
@@ -173,6 +238,28 @@ li {
     box-shadow: 0 8px 18px rgba(74, 36, 18, 0.22);
 }
 
+
+
+.safety-message {
+    margin: 28px 0 0;
+    padding: 16px 20px;
+    border: 2px dashed var(--border-brown);
+    border-radius: 16px;
+    background: rgba(255, 248, 232, 0.86);
+    color: var(--deep-chestnut);
+    text-align: center;
+    font-size: 1.05rem;
+    font-style: italic;
+}
+
+
+.safety-message strong {
+    font-size: 1.35em;
+    font-style: normal;
+    font-weight: 900;
+    color: var(--wood);
+}
+
 @media (max-width: 600px) {
     main {
         width: min(100% - 20px, 920px);
@@ -181,5 +268,13 @@ li {
 
     section {
         padding: 16px;
+    }
+
+    .step-card {
+        grid-template-columns: 1fr;
+    }
+
+    .step-icon {
+        justify-self: start;
     }
 }

@@ -1,7 +1,7 @@
 {
     "name": "Roast Pork",
-    "description": "Delicious roast pork",
-    "ingredients": ["pork", "stuffing", "potatoes", "gravy"],
+    "description": "Delicious roast pork.",
+    "ingredients": ["Pork", "Stuffing", "Potatoes", "Plain Flour", "Gravy", "Apple Sauce"],
     "defaultMainIngredientMassKg": 1.6,
     "minimumMass": 1.0,
     "maximumMass": 3.2,
@@ -15,9 +15,13 @@
         {
             "name": "Initial roast",
             "description": "Roast pork at the higher temperature",
-            "temperature": 220,
+            "temperature": 210,
             "minutesPerKg": 20,
-            "fixedMinutes": 10
+            "fixedMinutes": 35
+        },
+        {
+            "name": "Part Boil Potatoes",
+            "description": "Peel, cut to right size, and part boil potatoes."
         },
         {
             "name": "Main roast",
@@ -26,16 +30,28 @@
             "fixedMinutes": 20
         },
         {
+            "name": "Steam Vegetables",
+            "description": "Turn on the steamer so that the vegetables are steaming for about an hour."
+        },
+        {
             "name": "Resting time",
             "description": "Remove from oven and allow to rest covered on the side.",
 
             "fixedMinutes": 15
         },
         {
+            "name": "Roast Potatoes",
+            "description": "Drain the potatoes, ruffle them for extra crisp, add a spoonful of plain flour and stir through. Put potatoes back into the oven to roast, basting in the oil and juices from the main roast."
+        },
+        {
             "name": "Gravy",
             "description": "Make gravy",
             "temperature": null,
             "fixedMinutes": 0
+        },
+        {
+            "name": "Carve, and serve",
+            "description": "Carve the meat, and serve when ready."
         }
     ],
     "expectedTotalDefaultTimeMinutes": 99

@@ -68,6 +68,7 @@
             <h2>Pictures</h2>
             <div id="recipe-images" class="recipe-images"></div>
         </section>
+        <footer class="safety-message" id="safety-message"></footer>
 
         <script>
             window.recipes = @json($recipes);

@@ -1,0 +1,47 @@
+{
+    "name": "Rhubarb Crumble",
+    "description": "A delicious rhubarb crumble",
+    "ingredients": ["Rhubarb", "Brown Sugar", "Plain Flour", "Butter", "White Sugar", "Custard"],
+    "defaultMainIngredientMassKg": 1.0,
+    "minimumMass": 1.0,
+    "maximumMass": 3.2,
+    "steps": [
+        {
+            "name": "Preheat",
+            "description": "Preheat the oven",
+            "temperature": 180,
+            "fixedMinutes": 15
+        },
+        {
+            "name": "Chop Rhubarb and Mix",
+            "description": "Chop rhubarb, add the brown sugar, into pan."
+        },
+        {
+            "name": "Prepare Crumble",
+            "description": "Rub together the flour and butter, then stir in the white sugar"
+        },
+        {
+            "name": "Sprinkle",
+            "description": "Sprinkle the crumble over the rhubarb"
+        },
+        {
+            "name": "Sweeten",
+            "description": "Sprinkle brown sugar over the crumble for that extra crunch."
+        },
+        {
+            "name": "Bake",
+            "description": "Put into oven and bake.",
+            "temperature": 180,
+            "fixedMinutes": 30
+        },
+        {
+            "name": "Make Custard",
+            "description": "Prepare custard."
+        },
+        {
+            "name": "Serve",
+            "description": "Serve to the eager guests, warning them that it'll be hot and will keep them regular."
+        }
+    ],
+    "expectedTotalDefaultTimeMinutes": 92
+}

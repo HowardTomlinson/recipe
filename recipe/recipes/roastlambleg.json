@@ -1,21 +1,21 @@
 {
-    "name": "Roast Chicken",
-    "description": "Delicious roast chicken with all the trimmings",
-    "ingredients": ["Chicken", "Stuffing mix", "Potatoes",  "Plain Flour", "Herbs","Vegetables", "Gravy", "Love"],
-    "defaultMainIngredientMassKg": 1.2,
+    "name": "Roast Lamb Leg",
+    "description": "Delicious roast lamb leg, medium, with all the trimmings.",
+    "ingredients": ["Lamb", "Stuffing", "Potatoes", "Gravy", "Mint Sauce"],
+    "defaultMainIngredientMassKg": 1.6,
     "minimumMass": 1.0,
     "maximumMass": 3.2,
     "steps": [
         {
             "name": "Preheat",
             "description": "Preheat the oven to the roast temperature",
-            "temperature": 180,
+            "temperature": 200,
             "fixedMinutes": 15
         },
         {
             "name": "Initial roast",
-            "description": "Roast chicken at the higher temperature",
-            "temperature": 180,
+            "description": "Roast lamb at the higher temperature",
+            "temperature": 200,
             "fixedMinutes": 20
         },
         {
@@ -27,14 +27,14 @@
             "description": "Add boiling water to stuffing mix, and let sit for 5 minutes, then form into final shape (shallow dish, balls, slugs etc.)"
         },
         {
-            "name": "Steam Vegetables",
-            "description": "Turn on the steamer so that the vegetables are steaming for about an hour."
-        },
-        {
             "name": "Main roast",
             "description": "Turn down the temperature for the main roast",
-            "temperature": 160,
+            "temperature": 150,
             "minutesPerKg": 40
+        },
+        {
+            "name": "Steam Vegetables",
+            "description": "Turn on the steamer so that the vegetables are steaming for about an hour."
         },
         {
             "name": "Roast Stuffing",
@@ -42,13 +42,13 @@
         },
         {
             "name": "Roast Potatoes",
-            "description": "Drain the potatoes, ruffle them for extra crisp, add a spoonful of plain flour and some herbs and stir through. Put potatoes back into the oven to roast, basting in the oil and juices from the main roast."
+            "description": "Drain the potatoes, ruffle them for extra crisp, add a spoonful of plain flour and stir through. Put potatoes back into the oven to roast, basting in the oil and juices from the main roast."
         },
         {
             "name": "Resting time",
             "description": "Remove from oven and allow to rest covered on the side.",
             "temperature": null,
-            "fixedMinutes": 15
+            "fixedMinutes": 30
         },
         {
             "name": "Gravy",
