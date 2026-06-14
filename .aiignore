@@ -1,0 +1,11 @@
+diary.md
+readme.md
+
+recipe/.env
+recipe/.env.*
+recipe/composer.lock
+recipe/package-lock.json
+recipe/vendor/
+recipe/node_modules/
+recipe/storage/logs/
+recipe/bootstrap/cache/

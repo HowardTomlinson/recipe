@@ -15,6 +15,10 @@ I could have hand-coded this in a couple of days. Using AI this took about 5 hou
 
 I made a number of small improvements along the way, each time using AI assistance.
 
+See my original [spec.md](spec.md) I used to develop the starting specification to work from.
+
+As I usually do, I kept a short [diary.md](diary.md) of my steps and progress - something I really recommend doing when developing your own small projects!
+
 ## Deployed
 
 Check it out deployed at [recipes.kirstentomlinson.com]()
