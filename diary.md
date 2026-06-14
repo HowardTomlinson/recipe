@@ -65,11 +65,11 @@ git commit -m "Initial Laravel Sail project"
 This gives you a clean rollback point.
 4. Add the /recipes directory
    Create a top-level recipe data directory:``` text
-   recipes/
-   roastchicken.json
-   roastbeef.json
-   roastpork.json
-   roastlamb.json
+recipes/
+  roastchicken.json
+  roastbeef.json
+  roastpork.json
+  roastlamb.json
 ```
 
 Start with roastchicken.json exactly matching the validated example from your spec.
@@ -216,3 +216,16 @@ no recipes message works if the directory is empty or all files are invalid.
     Aim for this first:
     A Laravel page at / that loads roastchicken.json, lets you change mass, recalculates the step times live, and shows the total time as 92 minutes at the default mass.
     Once that works, adding the other recipes and polish will be straightforward.
+
+
+
+# Implementation
+
+I implemented through the list of steps, and what was generated was a successful working version.
+
+I asked AI to improve a couple of areas, some styling and presentation which I wanted to look a bit better, and also to separate out the css and js into their own files.
+
+# Improvements
+
+Now I'm wanting to make a few improvements on the original spec, but I will make these as an additional file.
+
