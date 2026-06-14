@@ -1,41 +1,66 @@
 {
     "name": "Roast Beef",
     "description": "Delicious roast beef",
-    "ingredients": ["beef", "puddings", "potatoes", "gravy"],
-    "defaultMainIngredientMassKg": 1.6,
+    "ingredients": ["Beef", "Vegetable Oil","Yorkshire puddings (eggs, flour, milk)", "Potatoes", "Gravy", "Vegetables", "Horseradish sauce"],
+    "defaultMainIngredientMassKg": 1.0,
     "minimumMass": 1.0,
     "maximumMass": 3.2,
     "steps": [
         {
             "name": "Preheat",
             "description": "Preheat the oven to the roast temperature",
-            "temperature": 220,
+            "temperature": 200,
             "fixedMinutes": 15
         },
         {
+            "name": "Yorkshire Pudding Mix",
+            "description": "Make the batter for the Yorkshire puddings, and allow to sit."
+        },
+        {
             "name": "Initial roast",
-            "description": "Roast beef at the higher temperature",
-            "temperature": 220,
-            "minutesPerKg": 20,
-            "fixedMinutes": 10
+            "description": "Roast beef at the higher temperature, with vegetable oil.",
+            "temperature": 200,
+            "fixedMinutes": 30
+        },
+        {
+            "name": "Part Boil Potatoes",
+            "description": "Peel, cut to right size, and part boil potatoes."
         },
         {
             "name": "Main roast",
             "description": "Turn down the temperature for the main roast",
-            "temperature": 180,
-            "fixedMinutes": 20
+            "temperature": 160,
+            "minutesPerKg": 20
+        },
+        {
+            "name": "Steam Vegetables",
+            "description": "Turn on the steamer so that the vegetables are steaming for about an hour."
         },
         {
             "name": "Resting time",
-            "description": "Remove from oven and allow to rest covered on the side.",
+            "description": "Remove from fan oven, foil, and allow to rest in the top oven.",
             "temperature": null,
-            "fixedMinutes": 15
+            "fixedMinutes": 30
+        },
+        {
+            "name": "Roast Potatoes",
+            "description": "Drain the potatoes, ruffle them for extra crisp, add a spoonful of plain flour and stir through. Put potatoes back into the oven to roast, basting in the oil and juices from the main roast."
+        },
+        {
+            "name": "Preheat pudding oil",
+            "description": "Vegetable oil in to the individual dishes to be hot ready for the batter."
+        },
+        {
+            "name": "Yorkshire Puddings",
+            "description": "Put Yorkshire pudding batter into the individual dishes, leaving to cook for just 10 minutes"
         },
         {
             "name": "Gravy",
-            "description": "Make gravy",
-            "temperature": null,
-            "fixedMinutes": 0
+            "description": "Make gravy"
+        },
+        {
+            "name": "Carve, and serve",
+            "description": "Carve the meat while the yorkshire puddings are still cooking, and serve when ready."
         }
     ],
     "expectedTotalDefaultTimeMinutes": 92

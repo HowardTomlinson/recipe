@@ -227,5 +227,31 @@ I asked AI to improve a couple of areas, some styling and presentation which I w
 
 # Improvements
 
-Now I'm wanting to make a few improvements on the original spec, but I will make these as an additional file.
+Now I'm wanting to make a few improvements on the original spec.
+
+* Add in recipe image, if it exists.
+* Adjust so that if no time/temperature is listed, it doesn't get shown.
+* Add in multiple images if there are many matching the recipe slug pattern.
+
+In each case, I ask the AI what to do to make the changes. Sometimes it's such a simple change that I just make it directly.
+
+
+# Conclusion
+
+Using JetBrains AI was a great experience. I was particularly impressed with how well it helped to develop the spec, by suggesting improvements at that stage. Then, when it came to implementing that spec, it seemed able to do so in sensible steps, adding testing and checking instructions along the way. 
+
+Whenever I wanted improvements (i.e. suggesting separating the css and js out) it was helpful and easy to do so.
+
+One minor annoyance was that one of my requests timed out, which was a bit of a delay, but I was able to rephrase and request again before long. It appears that the server may have been overloaded at the time.
+
+Adding features was very easy.
+
+I noticed that the generated code was pretty high quality, with well named objects (nouns) and functions (verbs). It knew when to pluralise the nouns for an array or collection.
+
+# Overall
+
+Key to the experience is developing the spec, and having the AI assistance during this phase. Doing this meant that the actual implementation was very smooth.
+
+
+
 

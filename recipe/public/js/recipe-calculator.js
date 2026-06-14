@@ -6,6 +6,8 @@ const massSlider = document.getElementById('mass-slider');
 const massInput = document.getElementById('mass-input');
 const stepsList = document.getElementById('steps-list');
 const totalTime = document.getElementById('total-time');
+const recipeImageSection = document.getElementById('recipe-image-section');
+const recipeImages = document.getElementById('recipe-images');
 
 function getSelectedRecipe() {
     return window.recipes.find(function (recipe) {
@@ -88,30 +90,54 @@ function renderSteps(recipeData, massKg) {
         description.textContent = step.description;
         item.appendChild(description);
 
-        const temperature = document.createElement('p');
 
         if (step.temperature === undefined || step.temperature === null) {
-            temperature.textContent = 'Temperature: no oven temperature';
+            // Don't display anything for the temperature element if there is none set.
+            // temperature.textContent = 'Temperature: no oven temperature';
         } else {
+            const temperature = document.createElement('p');
             temperature.textContent = 'Temperature: ' + step.temperature + '°C';
+            item.appendChild(temperature);
         }
 
-        item.appendChild(temperature);
 
-        const time = document.createElement('p');
 
         if (calculatedStepTime.hasTime) {
+            const time = document.createElement('p');
+            time.classList.add('step-time');
             time.textContent = 'Time: ' + calculatedStepTime.minutes + ' minutes';
+            item.appendChild(time);
         } else {
-            time.textContent = 'Time: no timed duration';
+            // Don't display anything for the time element if there is no time set.'
+            // time.textContent = 'Time: no timed duration';
         }
 
-        item.appendChild(time);
 
         stepsList.appendChild(item);
     });
 
     totalTime.textContent = calculatedTotalTime + ' minutes';
+}
+
+function renderRecipeImages(selectedRecipe) {
+    recipeImages.innerHTML = '';
+
+    if (! selectedRecipe.imageUrls || selectedRecipe.imageUrls.length === 0) {
+        recipeImageSection.hidden = true;
+
+        return;
+    }
+
+    selectedRecipe.imageUrls.forEach(function (imageUrl, index) {
+        const image = document.createElement('img');
+        image.classList.add('recipe-image');
+        image.src = imageUrl;
+        image.alt = selectedRecipe.data.name + ' picture ' + (index + 1);
+
+        recipeImages.appendChild(image);
+    });
+
+    recipeImageSection.hidden = false;
 }
 
 function renderSelectedRecipe() {
@@ -137,6 +163,7 @@ function renderSelectedRecipe() {
 
     renderIngredients(recipeData);
     renderSteps(recipeData, defaultMass);
+    renderRecipeImages(selectedRecipe);
 }
 
 function updateMass(newMass) {

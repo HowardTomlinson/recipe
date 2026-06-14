@@ -123,6 +123,17 @@ li {
     margin-top: 0;
 }
 
+.step-time {
+    display: inline-block;
+    margin: 8px 0 0;
+    padding: 8px 14px;
+    border-radius: 999px;
+    background: var(--warm-yellow);
+    color: var(--deep-chestnut);
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
 #total-time {
     display: inline-block;
     margin: 0;
@@ -136,6 +147,30 @@ li {
 .mass-control {
     display: grid;
     gap: 8px;
+}
+
+
+.recipe-image-section {
+    text-align: center;
+}
+
+.recipe-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+    align-items: start;
+}
+
+.recipe-image {
+    display: block;
+    width: 100%;
+    max-width: 680px;
+    max-height: 460px;
+    margin: 0 auto;
+    border: 4px solid var(--border-brown);
+    border-radius: 18px;
+    object-fit: cover;
+    box-shadow: 0 8px 18px rgba(74, 36, 18, 0.22);
 }
 
 @media (max-width: 600px) {

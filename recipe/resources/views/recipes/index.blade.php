@@ -64,6 +64,11 @@
             <p id="total-time"></p>
         </section>
 
+        <section id="recipe-image-section" class="recipe-image-section" hidden>
+            <h2>Pictures</h2>
+            <div id="recipe-images" class="recipe-images"></div>
+        </section>
+
         <script>
             window.recipes = @json($recipes);
         </script>
